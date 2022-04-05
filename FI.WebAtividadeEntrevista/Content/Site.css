@@ -1,0 +1,30 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.color-transparent{
+    color:transparent;
+}
+
+.modal-beneficiario {
+    width: 50%;
+}
+
+.p-0{
+    padding: 0;
+}
+
+#gridBeneficiarios > div.jtable-main-container > table.jtable > thead {
+    background-color: #FFF !important;
+}
+    #gridBeneficiarios > div.jtable-main-container > table.jtable > thead th {
+        font-weight: normal !important;
+        color: gray !important;
+    }

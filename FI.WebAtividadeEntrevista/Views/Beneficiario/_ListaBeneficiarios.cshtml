@@ -1,0 +1,36 @@
+﻿@model WebAtividadeEntrevista.Models.ClienteModel
+
+@foreach (var beneficiario in Model.ListBeneficiario)
+{
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="CPFBeneficiario">CPF:</label>
+                <input required="required" type="text" class="form-control" id="CPFBeneficiario" readonly name="CPF" value="@beneficiario.CPF" placeholder="Ex.: 222.333.555-00" maxlength="13">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="NomeBeneficiario">Nome:</label>
+                <input required="required" type="text" class="form-control" id="NomeBeneficiario" name="Nome" value="@beneficiario.Nome" placeholder="Ex.: João" maxlength="50">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group row">
+
+                <div class="col-md-6 p-0">
+                    <label class="color-transparent">Incluir</label>
+                    <button id=btnAlterar type="button" class="btn btn-sm btn-info" onclick="return alterarBeneficiario(' + data.record.Id + ');"> Alterar</button>
+                </div>
+
+                <div class="col-md-6 p-0">
+                    <label class="color-transparent">Excluir</label>
+                    <button id=btnExcluir type="button" class="btn btn-sm btn-info" onclick="return excluirBeneficiario(' + data.record.Id + ');"> Excluir</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
